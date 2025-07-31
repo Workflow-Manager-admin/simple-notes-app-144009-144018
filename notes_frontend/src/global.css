@@ -6,10 +6,15 @@
  */
 
 :root {
-  --primary-color: #000000;
-  --secondary-color: #333333;
-  --accent-color: #0078d4;
+  --primary-color: #1976d2;    /* blue */
+  --secondary-color: #424242;  /* dark gray */
+  --accent-color: #ffab00;     /* yellow accent */
   --background-color: #ffffff;
+  --sidebar-bg: #f7f7f9;
+  --border-color: #e0e0e0;
+  --input-bg: #f6f8fa;
+  --input-border: #d1d5db;
+  --header-bg: #fff;
 }
 
 html {

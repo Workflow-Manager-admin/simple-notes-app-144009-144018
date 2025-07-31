@@ -1,20 +1,11 @@
-import { component$, Slot, useStyles$ } from "@builder.io/qwik";
-import type { RequestHandler } from "@builder.io/qwik-city";
-import styles from "./styles.css?inline";
+import { component$, Slot } from "@builder.io/qwik";
 
-export const onGet: RequestHandler = async ({ cacheControl }) => {
-  cacheControl({
-    staleWhileRevalidate: 60 * 60 * 24 * 7,
-    maxAge: 5,
-  });
-};
-
+/**
+ * Layout wrapper just provides <main> slot for routed children.
+ */
 // PUBLIC_INTERFACE
-export default component$(() => {
-  useStyles$(styles);
-  return (
-    <main>
-      <Slot />
-    </main>
-  );
-});
+export default component$(() => (
+  <main>
+    <Slot />
+  </main>
+));
